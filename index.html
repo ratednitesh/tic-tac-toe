@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <link rel="title icon" type="image/png" href="img/logo.gif">
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+
+    <title>Tic Tac Toe</title>
+  </head>
+  <body style="background-color:lightskyblue">
+    <div
+      class="container "
+      style="text-align: center; margin-left:120px;"
+    >
+      <div
+        class="row  bg-white justify-content-center text-dark m-5"
+        style="height:470px;width: 640px; border-radius: 5%"
+      > 
+        <div class="col-7">
+          <h1 class="display-4 py-4 " style="height:100px;">Tic Tac Toe <a href="" class="badge"><i class="fas fa-sync text-danger "></i></a> </h1>
+         
+          <div class="row ">
+            <div id="div-1"
+              class="col-4 bg-white"
+              style="height:100px; border-color: black; border-width: 10px;
+            border-bottom-style: solid; border-top-left-radius: 5%; "
+            ><button id="1" class="btn text-dark" style="height:80px;width:80px;"><h1>X</h1></button></div>
+            <div id="div-2"
+              class="col-4 bg-white"
+              style="height:100px; border-color: black; border-width: 10px;
+            border-left-style: solid;
+            border-bottom-style: solid  "
+            ><button id="2" class="btn text-dark" style="height:80px;width:80px;"><h1>0</h1></button></div>
+            <div id="div-3"
+              class="col-4  bg-white"
+              style="height:100px; border-color: black; border-width: 10px;
+              border-left-style: solid;
+              border-bottom-style: solid; border-top-right-radius: 5%;
+              "
+            ><button id="3" class="btn text-dark" style="height:80px;width:80px;"><h1>X</h1></button></div>
+          </div>
+          <div class="row">
+            <div id="div-4"
+              class="col-4 bg-white"
+              style="height:100px; border-color: black; border-width: 10px;
+            border-bottom-style: solid"
+            ><button id="4" class="btn   m-1 text-dark" style="height:80px;width:80px;"><h1>0</h1></button></div>
+            <div id="div-5"
+              class="col-4 bg-white"
+              style="height:100px;border-color: black; border-width: 10px;
+            border-left-style: solid;border-bottom-style: solid"
+            ><button id="5" class="btn text-dark m-1" style="height:80px;width:80px;"><h1 >0</h1></button></div>
+            <div id="div-6"
+              class="col-4 bg-white"
+              style="height:100px; border-left-style: solid; border-color: black; border-width: 10px;
+              border-bottom-style: solid"
+            >
+            <button class="btn m-1 text-dark " id="6" style="height:80px;width:80px;"><h1 >X</h1></button>
+            </div>
+          </div>
+          <div class="row">
+            <div id="div-7"
+              class="col-4 bg-white"
+              style="height:100px;border-color: black; border-width: 10px;border-bottom-left-radius: 5%;"
+            > <button id="7" class="btn  m-1 text-dark" style="height:80px;width:80px;"><h1 >X</h1></button></div>
+            <div id="div-8"
+              class="col-4 bg-white  "
+              style="height:100px; border-color: black; border-width: 10px;
+            border-left-style: solid;"
+            > <button id="8" class="btn  m-1 text-dark" style="height:80px;width:80px;"><h1 >0</h1></button></div>
+            <div id="div-9"
+              class="col-4 bg-white"
+              style="height:100px; border-left-style: solid; border-color: black; border-width: 10px;
+              border-bottom-right-radius: 5%;"
+            > <button  id="9" class="btn  m-1 text-dark" style="height:80px;width:80px;"><h1 >X</h1></button></div>
+          </div>
+          <h1 id="msg" style="display: none">Player <span id="winner">X</span> wins!</h1>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
